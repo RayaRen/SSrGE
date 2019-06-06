@@ -85,11 +85,12 @@ def _download(data, verbose=True):
     waiting_list = [10, 20, 30]
 
     f_name = "{0}/{1}.sra".format(PATH_SEQ, gsm)
-
+'''
     if isfile('{0}/download_successfull.log'.format(PATH_SEQ)):
         msg = 'file {0} already downloaded. skipping...'.format(f_name)
         print(msg)
         return msg
+'''
     while True:
         try:
             url = urllib2.urlopen(url_address).read()
